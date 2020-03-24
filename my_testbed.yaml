@@ -1,0 +1,14 @@
+devices:
+  DACONO:
+    connections:
+      cli:
+        ip: 192.168.0.200
+        protocol: telnet
+    credentials:
+      default:
+        password: '%ENC{w5nDpcOHw6LDlcKYwpzClQ==}'
+        username: Qwest
+      enable:
+        password: '%ENC{w5nDpcOHw6LDlcKYwpzClQ==}'
+    os: ios
+    type: ios
