@@ -1,0 +1,76 @@
+{
+  "_exclude": [
+    "in_requests_pkts",
+    "in_replies_pkts",
+    "in_requests_pkts",
+    "out_replies_pkts",
+    "out_requests_pkts",
+    "in_drops",
+    "in_replies_pkts",
+    "out_requests_pkts",
+    "out_total"
+  ],
+  "attributes": null,
+  "commands": null,
+  "connections": null,
+  "context_manager": {},
+  "info": {
+    "interfaces": {
+      "GigabitEthernet0/0": {
+        "arp_dynamic_learning": {
+          "local_proxy_enable": false,
+          "proxy_enable": false
+        }
+      },
+      "GigabitEthernet0/1": {
+        "arp_dynamic_learning": {
+          "local_proxy_enable": false,
+          "proxy_enable": false
+        },
+        "ipv4": {
+          "neighbors": {
+            "192.168.0.197": {
+              "ip": "192.168.0.197",
+              "link_layer_address": "448a.5bc3.f65a",
+              "origin": "dynamic"
+            },
+            "192.168.0.200": {
+              "ip": "192.168.0.200",
+              "link_layer_address": "a80c.0d83.8b49",
+              "origin": "static"
+            },
+            "192.168.0.202": {
+              "ip": "192.168.0.202",
+              "link_layer_address": "001b.2adf.8468",
+              "origin": "dynamic"
+            },
+            "192.168.0.98": {
+              "ip": "192.168.0.98",
+              "link_layer_address": "2c6f.c909.8db3",
+              "origin": "dynamic"
+            }
+          }
+        }
+      },
+      "Loopback0": {
+        "arp_dynamic_learning": {
+          "local_proxy_enable": false,
+          "proxy_enable": true
+        }
+      },
+      "Multilink1": {
+        "arp_dynamic_learning": {
+          "local_proxy_enable": false,
+          "proxy_enable": false
+        }
+      }
+    },
+    "statistics": {
+      "in_drops": 0,
+      "in_replies_pkts": 79,
+      "in_requests_pkts": 35813,
+      "out_replies_pkts": 81,
+      "out_requests_pkts": 62
+    }
+  }
+}

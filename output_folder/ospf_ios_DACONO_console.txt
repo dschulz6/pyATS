@@ -1,0 +1,93 @@
++++ DACONO: executing command 'show ip ospf' +++
+show ip ospf
+
+DACONO#
++++ DACONO: executing command 'show ip protocols' +++
+show ip protocols
+*** IP Routing is NSF aware ***
+
+Routing Protocol is "bgp 65422"
+  Outgoing update filter list for all interfaces is not set
+  Incoming update filter list for all interfaces is not set
+  IGP synchronization is disabled
+  Automatic route summarization is disabled
+  Redistributing: connected, static
+  Neighbor(s):
+    Address          FiltIn FiltOut DistIn DistOut Weight RouteMap
+    63.158.199.57                                        
+  Maximum path: 1
+  Routing Information Sources:
+    Gateway         Distance      Last Update
+  Distance: external 20 internal 200 local 200
+
+DACONO#
++++ DACONO: executing command 'show ip ospf mpls ldp interface' +++
+show ip ospf mpls ldp interface
+
+DACONO#
++++ DACONO: executing command 'show ip ospf mpls traffic-eng link' +++
+show ip ospf mpls traffic-eng link
+
+DACONO#
++++ DACONO: executing command 'show ip ospf database router' +++
+show ip ospf database router
+
+DACONO#
++++ DACONO: executing command 'show ip ospf database network' +++
+show ip ospf database network
+
+DACONO#
++++ DACONO: executing command 'show ip ospf database external' +++
+show ip ospf database external
+
+DACONO#
++++ DACONO: executing command 'show ip ospf database summary' +++
+show ip ospf database summary
+
+DACONO#
++++ DACONO: executing command 'show ip ospf database opaque-area' +++
+show ip ospf database opaque-area
+
+DACONO#
++++ DACONO: executing command 'show ip ospf virtual-links' +++
+show ip ospf virtual-links
+
+DACONO#
++++ DACONO: executing command 'show ip ospf interface' +++
+show ip ospf interface
+
+DACONO#
++++ DACONO: executing command 'show ip ospf neighbor detail' +++
+show ip ospf neighbor detail
+
+DACONO#
++++ DACONO: executing command 'show ip ospf sham-links' +++
+show ip ospf sham-links
+
+DACONO#
+l'>
+Parser Output is empty
+Could not learn <class 'genie.libs.parser.ios.show_ospf.ShowIpOspfShamLinks'>
+Parser Output is empty
++====================================================================================================================================================+
+| Commands for learning feature 'Ospf'                                                                                                               |
++====================================================================================================================================================+
+| - Parsed commands                                                                                                                                  |
+|----------------------------------------------------------------------------------------------------------------------------------------------------|
+|   cmd: <class 'genie.libs.parser.iosxe.show_protocols.ShowIpProtocols'>, arguments: {'vrf':''}                                                     |
+|====================================================================================================================================================|
+| - Commands with empty output                                                                                                                       |
+|----------------------------------------------------------------------------------------------------------------------------------------------------|
+|   cmd: <class 'genie.libs.parser.ios.show_ospf.ShowIpOspf'>                                                                                        |
+|   cmd: <class 'genie.libs.parser.ios.show_ospf.ShowIpOspfMplsLdpInterface'>, arguments: {'interface':''}                                           |
+|   cmd: <class 'genie.libs.parser.ios.show_ospf.ShowIpOspfMplsTrafficEngLink'>                                                                      |
+|   cmd: <class 'genie.libs.parser.ios.show_ospf.ShowIpOspfDatabaseRouter'>                                                                          |
+|   cmd: <class 'genie.libs.parser.ios.show_ospf.ShowIpOspfDatabaseNetwork'>                                                                         |
+|   cmd: <class 'genie.libs.parser.ios.show_ospf.ShowIpOspfDatabaseExternal'>                                                                        |
+|   cmd: <class 'genie.libs.parser.ios.show_ospf.ShowIpOspfDatabaseSummary'>                                                                         |
+|   cmd: <class 'genie.libs.parser.ios.show_ospf.ShowIpOspfDatabaseOpaqueArea'>                                                                      |
+|   cmd: <class 'genie.libs.parser.ios.show_ospf.ShowIpOspfVirtualLinks'>                                                                            |
+|   cmd: <class 'genie.libs.parser.ios.show_ospf.ShowIpOspfInterface'>, arguments: {'interface':''}                                                  |
+|   cmd: <class 'genie.libs.parser.ios.show_ospf.ShowIpOspfNeighborDetail'>, arguments: {'neighbor':''}                                              |
+|   cmd: <class 'genie.libs.parser.ios.show_ospf.ShowIpOspfShamLinks'>                                                                               |
+|====================================================================================================================================================|

@@ -1,0 +1,26 @@
+{
+  "_exclude": [],
+  "attributes": null,
+  "commands": null,
+  "connections": null,
+  "context_manager": {},
+  "info": {
+    "con-bgp": {
+      "statements": {
+        "10": {
+          "actions": {
+            "route_disposition": "permit",
+            "set_community": "209:999",
+            "set_next_hop_self": false
+          }
+        },
+        "20": {
+          "actions": {
+            "route_disposition": "permit",
+            "set_next_hop_self": false
+          }
+        }
+      }
+    }
+  }
+}

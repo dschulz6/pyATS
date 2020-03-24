@@ -1,0 +1,43 @@
+{
+  "_exclude": [],
+  "attributes": null,
+  "commands": null,
+  "connections": null,
+  "context_manager": {},
+  "info": {
+    "prefix_set_name": {
+      "E2E": {
+        "prefix_set_name": "E2E",
+        "prefixes": {
+          "0.0.0.0/0 0..32 permit": {
+            "action": "permit",
+            "masklength_range": "0..32",
+            "prefix": "0.0.0.0/0"
+          },
+          "67.14.0.0/17 17..32 deny": {
+            "action": "deny",
+            "masklength_range": "17..32",
+            "prefix": "67.14.0.0/17"
+          },
+          "67.14.128.0/19 19..32 deny": {
+            "action": "deny",
+            "masklength_range": "19..32",
+            "prefix": "67.14.128.0/19"
+          }
+        },
+        "protocol": "ipv4"
+      },
+      "small-blocks": {
+        "prefix_set_name": "small-blocks",
+        "prefixes": {
+          "0.0.0.0/0 24..32 permit": {
+            "action": "permit",
+            "masklength_range": "24..32",
+            "prefix": "0.0.0.0/0"
+          }
+        },
+        "protocol": "ipv4"
+      }
+    }
+  }
+}

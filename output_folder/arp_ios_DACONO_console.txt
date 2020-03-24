@@ -1,0 +1,282 @@
++++ DACONO: executing command 'show ip arp' +++
+show ip arp
+Protocol  Address          Age (min)  Hardware Addr   Type   Interface
+Internet  192.168.0.98           51   2c6f.c909.8db3  ARPA   GigabitEthernet0/1
+Internet  192.168.0.197           4   448a.5bc3.f65a  ARPA   GigabitEthernet0/1
+Internet  192.168.0.200           -   a80c.0d83.8b49  ARPA   GigabitEthernet0/1
+Internet  192.168.0.202         141   001b.2adf.8468  ARPA   GigabitEthernet0/1
+DACONO#
++++ DACONO: executing command 'show vrf' +++
+show vrf
+
+DACONO#
++++ DACONO: executing command 'show ip interface' +++
+show ip interface
+GigabitEthernet0/0 is administratively down, line protocol is down
+  Internet address is 10.134.50.2/24
+  Broadcast address is 255.255.255.255
+  Address determined by non-volatile memory
+  MTU is 1500 bytes
+  Helper address is not set
+  Directed broadcast forwarding is disabled
+  Outgoing access list is not set
+  Inbound  access list is not set
+  Proxy ARP is disabled
+  Local Proxy ARP is disabled
+  Security level is default
+  Split horizon is enabled
+  ICMP redirects are never sent
+  ICMP unreachables are always sent
+  ICMP mask replies are never sent
+  IP fast switching is enabled
+  IP fast switching on the same interface is disabled
+  IP Flow switching is disabled
+  IP CEF switching is enabled
+  IP CEF switching turbo vector
+  IP multicast fast switching is enabled
+  IP multicast distributed fast switching is disabled
+  IP route-cache flags are Fast, CEF
+  Router Discovery is disabled
+  IP output packet accounting is disabled
+  IP access violation accounting is disabled
+  TCP/IP header compression is disabled
+  RTP/IP header compression is disabled
+  Policy routing is disabled
+  Network address translation is disabled
+  BGP Policy Mapping is disabled
+  Input features: MCI Check
+  WCCP Redirect outbound is disabled
+  WCCP Redirect inbound is disabled
+  WCCP Redirect exclude is disabled
+GigabitEthernet0/1 is up, line protocol is up
+  Internet address is 192.168.0.200/24
+  Broadcast address is 255.255.255.255
+  Address determined by non-volatile memory
+  MTU is 1500 bytes
+  Helper address is not set
+  Directed broadcast forwarding is disabled
+  Outgoing access list is not set
+  Inbound  access list is not set
+  Proxy ARP is disabled
+  Local Proxy ARP is disabled
+  Security level is default
+  Split horizon is enabled
+  ICMP redirects are never sent
+  ICMP unreachables are always sent
+  ICMP mask replies are never sent
+  IP fast switching is enabled
+  IP fast switching on the same interface is disabled
+  IP Flow switching is disabled
+  IP CEF switching is enabled
+  IP CEF switching turbo vector
+  IP multicast fast switching is enabled
+  IP multicast distributed fast switching is disabled
+  IP route-cache flags are Fast, CEF
+  Router Discovery is disabled
+  IP output packet accounting is disabled
+  IP access violation accounting is disabled
+  TCP/IP header compression is disabled
+  RTP/IP header compression is disabled
+  Policy routing is disabled
+  Network address translation is disabled
+  BGP Policy Mapping is disabled
+  Input features: MCI Check
+  WCCP Redirect outbound is disabled
+  WCCP Redirect inbound is disabled
+  WCCP Redirect exclude is disabled
+GigabitEthernet0/2 is administratively down, line protocol is down
+  Internet protocol processing disabled
+Serial0/0/0:0 is down, line protocol is down
+  Internet protocol processing disabled
+Serial0/0/1:0 is administratively down, line protocol is down
+  Internet protocol processing disabled
+Serial0/1/0:0 is down, line protocol is down
+  Internet protocol processing disabled
+Serial0/1/1:0 is down, line protocol is down
+  Internet protocol processing disabled
+Loopback0 is up, line protocol is up
+  Internet address is 2.2.2.2/24
+  Broadcast address is 255.255.255.255
+  Address determined by setup command
+  MTU is 1514 bytes
+  Helper address is not set
+  Directed broadcast forwarding is disabled
+  Outgoing access list is not set
+  Inbound  access list is not set
+  Proxy ARP is enabled
+  Local Proxy ARP is disabled
+  Security level is default
+  Split horizon is enabled
+  ICMP redirects are always sent
+  ICMP unreachables are always sent
+  ICMP mask replies are never sent
+  IP fast switching is enabled
+  IP fast switching on the same interface is disabled
+  IP Flow switching is disabled
+  IP CEF switching is enabled
+  IP CEF switching turbo vector
+  IP Null turbo vector
+  IP multicast fast switching is enabled
+  IP multicast distributed fast switching is disabled
+  IP route-cache flags are Fast, CEF
+  Router Discovery is disabled
+  IP output packet accounting is disabled
+  IP access violation accounting is disabled
+  TCP/IP header compression is disabled
+  RTP/IP header compression is disabled
+  Policy routing is disabled
+  Network address translation is disabled
+  BGP Policy Mapping is disabled
+  Input features: MCI Check
+  WCCP Redirect outbound is disabled
+  WCCP Redirect inbound is disabled
+  WCCP Redirect exclude is disabled
+Multilink1 is down, line protocol is down
+  Internet address is 63.158.199.58/30
+  Broadcast address is 255.255.255.255
+  Address determined by non-volatile memory
+  MTU is 1500 bytes
+  Helper address is not set
+  Directed broadcast forwarding is disabled
+  Outgoing access list is not set
+  Inbound  access list is not set
+  Proxy ARP is disabled
+  Local Proxy ARP is disabled
+  Security level is default
+  Split horizon is enabled
+  ICMP redirects are never sent
+  ICMP unreachables are never sent
+  ICMP mask replies are never sent
+  IP fast switching is enabled
+  IP fast switching on the same interface is enabled
+  IP Flow switching is disabled
+  IP CEF switching is enabled
+  IP CEF switching turbo vector
+  IP Null turbo vector
+  IP multicast fast switching is enabled
+  IP multicast distributed fast switching is disabled
+  IP route-cache flags are Fast, CEF
+  Router Discovery is disabled
+  IP output packet accounting is disabled
+  IP access violation accounting is disabled
+  TCP/IP header compression is disabled
+  RTP/IP header compression is disabled
+  Policy routing is disabled
+  Network address translation is disabled
+  BGP Policy Mapping is disabled
+  Input features: MCI Check
+  Output features: CCE Post NAT Classification, AF Policing
+  Post encapsulation features: CAR
+  WCCP Redirect outbound is disabled
+  WCCP Redirect inbound is disabled
+  WCCP Redirect exclude is disabled
+DACONO#
++++ DACONO: executing command 'show ip arp summary' +++
+show ip arp summary
+Translating "summary"
+
+show ip arp summary
+             ^
+% Invalid input detected at '^' marker.
+
+DACONO#
++++ DACONO: executing command 'show ip traffic' +++
+show ip traffic
+IP statistics:
+  Rcvd:  318589 total, 318589 local destination
+         0 format errors, 0 checksum errors, 0 bad hop count
+         0 unknown protocol, 0 not a gateway
+         0 security failures, 0 bad options, 0 with options
+  Opts:  0 end, 0 nop, 0 basic security, 0 loose source route
+         0 timestamp, 0 extended security, 0 record route
+         0 stream ID, 0 strict source route, 0 alert, 0 cipso, 0 ump
+         0 other
+  Frags: 0 reassembled, 0 timeouts, 0 couldn't reassemble
+         0 fragmented, 0 fragments, 0 couldn't fragment
+  Bcast: 307544 received, 0 sent
+  Mcast: 0 received, 0 sent
+  Sent:  11857 generated, 0 forwarded
+  Drop:  0 encapsulation failed, 0 unresolved, 0 no adjacency
+         0 no route, 0 unicast RPF, 0 forced drop
+         0 options denied
+  Drop:  0 packets with source IP address zero
+  Drop:  0 packets with internal loop back IP address
+         0 physical broadcast
+  Reinj: 0 in input feature path, 0 in output feature path
+
+ICMP statistics:
+  Rcvd: 0 format errors, 0 checksum errors, 0 redirects, 0 unreachable
+        35 echo, 0 echo reply, 0 mask requests, 0 mask replies, 0 quench
+        0 parameter, 0 timestamp, 0 timestamp replies, 0 info request, 0 other
+        0 irdp solicitations, 0 irdp advertisements
+        0 time exceeded, 0 info replies
+  Sent: 0 redirects, 0 unreachable, 0 echo, 35 echo reply
+        0 mask requests, 0 mask replies, 0 quench, 0 timestamp, 0 timestamp replies
+        0 info reply, 0 time exceeded, 0 parameter problem
+        0 irdp solicitations, 0 irdp advertisements
+
+BGP statistics:
+  Rcvd: 0 total, 0 opens, 0 notifications, 0 updates
+        0 keepalives, 0 route-refresh, 0 unrecognized
+  Sent: 0 total, 0 opens, 0 notifications, 0 updates
+        0 keepalives, 0 route-refresh
+
+PIMv2 statistics: Sent/Received
+  Total: 0/0, 0 checksum errors, 0 format errors
+  Registers: 0/0 (0 non-rp, 0 non-sm-group), Register Stops: 0/0,  Hellos: 0/0
+  Join/Prunes: 0/0, Asserts: 0/0, grafts: 0/0
+  Bootstraps: 0/0, Candidate_RP_Advertisements: 0/0
+  Queue drops: 0
+  State-Refresh: 0/0
+
+IGMP statistics: Sent/Received
+  Total: 0/0, Format errors: 0/0, Checksum errors: 0/0
+  Host Queries: 0/0, Host Reports: 0/0, Host Leaves: 0/0 
+  DVMRP: 0/0, PIM: 0/0
+  Queue drops: 0
+
+TCP statistics:
+  Rcvd: 11010 total, 0 checksum errors, 10 no port
+  Sent: 11822 total
+
+EIGRP-IPv4 statistics:
+  Rcvd: 0 total
+  Sent: 0 total
+
+UDP statistics:
+  Rcvd: 307544 total, 0 checksum errors, 307542 no port
+  Sent: 0 total, 0 forwarded broadcasts
+
+OSPF statistics:
+  Last clearing of OSPF traffic counters never
+
+  Rcvd: 0 total, 0 checksum errors
+  	0 hello, 0 database desc, 0 link state req
+  	0 link state updates, 0 link state acks
+
+  Sent: 0 total
+  	0 hello, 0 database desc, 0 link state req
+  	0 link state updates, 0 link state acks
+
+ARP statistics:
+  Rcvd: 35813 requests, 79 replies, 0 reverse, 0 other
+  Sent: 62 requests, 81 replies (0 proxy), 0 reverse
+  Drop due to input queue full: 0
+DACONO#
++====================================================================================================================================================+
+| Commands for learning feature 'Arp'                                                                                                                |
++====================================================================================================================================================+
+| - Parsed commands                                                                                                                                  |
+|----------------------------------------------------------------------------------------------------------------------------------------------------|
+|   cmd: <class 'genie.libs.parser.ios.show_arp.ShowIpArp'>                                                                                          |
+|   cmd: <class 'genie.libs.parser.ios.show_interface.ShowIpInterface'>                                                                              |
+|   cmd: <class 'genie.libs.parser.ios.show_arp.ShowIpTraffic'>                                                                                      |
+|====================================================================================================================================================|
+| - Commands not accepted on the device                                                                                                              |
+|----------------------------------------------------------------------------------------------------------------------------------------------------|
+|   cmd: <class 'genie.libs.parser.ios.show_arp.ShowIpArpSummary'>                                                                                   |
+|====================================================================================================================================================|
+| - Commands with empty output                                                                                                                       |
+|----------------------------------------------------------------------------------------------------------------------------------------------------|
+|   cmd: <class 'genie.libs.parser.ios.show_vrf.ShowVrf'>                                                                                            |
+|====================================================================================================================================================|

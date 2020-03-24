@@ -1,0 +1,58 @@
+{
+  "_exclude": [],
+  "attributes": null,
+  "commands": null,
+  "connections": null,
+  "context_manager": {},
+  "info": {
+    "vrf": {
+      "default": {
+        "address_family": {
+          "ipv4": {
+            "routes": {
+              "0.0.0.0/0": {
+                "next_hop": {
+                  "next_hop_list": {
+                    "1": {
+                      "active": false,
+                      "index": 1,
+                      "next_hop": "63.158.199.57",
+                      "preference": 1
+                    }
+                  }
+                },
+                "route": "0.0.0.0/0"
+              },
+              "67.14.0.0/17": {
+                "next_hop": {
+                  "next_hop_list": {
+                    "1": {
+                      "active": false,
+                      "index": 1,
+                      "next_hop": "63.158.199.57",
+                      "preference": 1
+                    }
+                  }
+                },
+                "route": "67.14.0.0/17"
+              },
+              "67.14.128.0/19": {
+                "next_hop": {
+                  "next_hop_list": {
+                    "1": {
+                      "active": false,
+                      "index": 1,
+                      "next_hop": "63.158.199.57",
+                      "preference": 1
+                    }
+                  }
+                },
+                "route": "67.14.128.0/19"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
