@@ -1,0 +1,14 @@
+devices:
+    DACONO:
+        type: 'router'
+        os: 'ios'
+        platform: 2900
+        alias: 'uut'
+        credentials:
+            default:
+                username: Qwest
+                password: ilfnb980
+        connections:
+            cli:
+                protocol: telnet
+                ip: "192.168.0.200"

@@ -1,0 +1,56 @@
+testbed:
+  name: pyATS_IOS_Example_Testbed
+devices:
+  ios1:
+    connections:
+      defaults:
+        class: 'unicon.Unicon'
+      a: 
+        protocol: telnet
+        ip: 192.168.0.200
+        port: 23
+    credentials:
+      default:
+        username: Qwest
+        password: ilfnb980
+    os:ios
+    type: ios
+  ios2:
+    connections:
+      defaults:
+        class: 'unicon.Unicon'
+      a: 
+        protocol: telnet
+        ip: 192.168.0.202
+        port: 23
+    credentials:
+      default:
+        username: Qwest
+        password: ilfnb980
+    os:ios 
+    type: ios
+topology:
+  ios1:
+    interfaces:
+      GigabitEthernet0/2: 
+        ipv4: 172.16.0.1/24
+        ipv6: '172:16::1/64'
+        link: n1
+        type: ethernet
+      Loopback0: 
+        ipv4: 2.2.2.2/32
+        ipv6: '2:2:2::2/128'
+        link: ios1_Loopback0
+        type: loopback
+  ios2:
+    interfaces:
+      FastEthernet0/1: 
+        ipv4: 172.16.0.2/24
+        ipv6: '172:16:0::2/64'
+        link: n1
+        type: ethernet
+      Loopback0: 
+        ipv4: 3.3.3.3/32
+        ipv6: '3:3:3::3/128'
+        link: ios2_Loopback0
+        type: loopback
