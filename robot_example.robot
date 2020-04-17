@@ -21,25 +21,25 @@ ${verification_datafile}     /home/dale/code/my-pyats-env/lib/python3.6/site-pac
 
 Connect
     use genie testbed "${testbed}"
-    connect to devices "DACONO"
+    connect to devices "Boulder1"
 
 parser show version
-    ${output}=    parse "show version" on device "DACONO"
+    ${output}=    parse "show version" on device "Boulder1"
 
 Learn bgp
-    ${output}=    learn "bgp" on device "DACONO"
+    ${output}=    learn "bgp" on device "Boulder1"
 
 verify Bgp before trigger
-    run verification "Verify_BgpAllNexthopDatabase" on device "DACONO"
+    run verification "Verify_BgpAllNexthopDatabase" on device "Boulder1"
 
 Trigger sleep
     run trigger "TriggerSleep" on device "DACONO" using alias "cli"
 
 verify Bgp after trigger
-    run verification "Verify_BgpAllNexthopDatabase" on device "DACONO"
+    run verification "Verify_BgpAllNexthopDatabase" on device "Boulder1"
 
 verify bgp count
-    verify count "1" "bgp neighbors" on device "DACONO"
+    verify count "1" "bgp neighbors" on device "Boulder1"
 
 verify bgp routes
-    verify count "1" "bgp routes" on device "DACONO"
+    verify count "1" "bgp routes" on device "Boulder1"
